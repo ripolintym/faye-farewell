@@ -1,5 +1,24 @@
 <template>
   <div>
+    <header>
+      <div>
+        <div>
+          <h6>normally.pol</h6>
+        </div>
+        <div class="socials-holder">
+          <div>
+            <p>About</p>
+          </div>
+          <div>
+            <p>Experience</p>
+          </div>
+          <div>
+            <p>Socials</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <main>
       <section>
         <div>
@@ -76,6 +95,12 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: 'YourComponentName', // Replace with your component name
+};
+</script>
 
-<style></style>
+<style>
+/* Add your styles here */
+</style>
