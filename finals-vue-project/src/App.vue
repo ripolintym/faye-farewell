@@ -2,4 +2,5 @@
   <Home/>
 </template>
 
-<script></style>
+<script></script>
+<style></style>
