@@ -1,44 +1,41 @@
+<script setup>
+
+import Profileimage from '../assets/images/profile.jpeg';
+
+</script>
+
 <template>
   <div>
     <!-- Header Tab -->
     <header class="header">
       <div class="header-holder">
         <div class="header-text">
-          <h1>Personal Profile Web Page</h1>
+          <h1>ptngmkpol</h1>
         </div>
         <div class="header-tabs">
-          <div class="tab"><h3><a href="">About Me</a></h3></div>
-          <div class="tab"><h3><a href="gallery">Picture Gallery</a></h3></div>
-          <div class="tab"><h3><a href="">Contact Me!</a></h3></div>
+          <div class="tab"><h3><a href="#profile">About Me</a></h3></div>
+          <div class="tab"><h3><a href="#achievements">Picture Gallery</a></h3></div>
+          <div class="tab"><h3><a href="">Contact Me</a></h3></div>
+          <div class="tab"><h3><a href="">Leave a comment</a></h3></div>
         </div>
       </div>
     </header>
 
     <!-- Profile Section -->
-    <section class="profile">
-      <div class="profile-holder">
-        <div class="profile-container">
-          <div class="picture">
-            <img src="css/assets/profile.jpeg" id="profile-picture" alt="Profile Picture">
+    <section class="profile" id = "profile">
+      <div class = profile>
+        <div id = "intro-container">
+            <img :src="Profileimage" class="intro-image">
           </div>
-          <div class="intro">
-            <h3>Hi, I'm Paul Brian Sumilhig!</h3>
+          <div class="intro-text">
+            <h1>Hi, I'm Paul Brian Sumilhig!</h1>
+            <h5>I am a 2nd Year student currently in office as an officer for two organizations.
+              <br> Also inclined with analytics, statistics, as well as data science and similar topics.
+            </h5>
           </div>
-          <div class="profile-description">
-            <h5>And you can find me here!</h5>
+          <div>
+
           </div>
-          <div class="socials-container">
-            <div class="socials-tab">
-              <a href="https://www.linkedin.com/in/paul-brian-sumilhig-531643320/" target="_blank">LinkedIn</a>
-            </div>
-            <div class="socials-tab">
-              <a href="https://github.com/apcpmsumilhig" target="_blank">GitHub</a>
-            </div>
-            <div class="socials-tab">
-              <a href="https://www.facebook.com/normally.pol" target="_blank">Facebook</a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -47,27 +44,14 @@
       <main>
         <section class="main-content">
           <div class="main-content-holder">
-
-            <!-- About Me -->
-            <div class="content-container">
+              <div class="content-container">
+              <!-- Education image removed -->
               <div class="content-text">
-                <h3>About Me</h3>
-                <p>I am a 2nd Year student currently in office as an officer for two organizations. Also inclined with analytics, statistics, as well as data science and similar topics.</p>
-              </div>
-              <img src="css/assets/aboutme.png" class="main-content-image" alt="About Me Image">
-            </div>
-
-            <div class="content-container">
-              <img class="main-content-image" src="css/assets/education.png" alt="Education Image">
-              <div class="content-text">
-                <h3>Education</h3>
-                Studied two different science high schools, one for Junior High School at 
-                <a href="https://www.facebook.com/profile.php?id=100083844947925" target="_blank" title="You can find my school here">Senator Renato Compañero Cayetano Memorial Science & Technology High School</a> 
-                and another one located at a different city for Senior High School at 
-                <a href="https://www.facebook.com/pcshs.edu" title="You can find it here!">Pasig City Science High School</a>. 
-                With Honors as a grade 12 student as well as a First Year College Student.
+                <h3 class=text-animation><span></span></h3><p>
+                Studied two different science high schools, one for Junior High School and another one located at a different city for Senior High School. With Honors as a grade 12 student as well as a First Year College Student.
+              </p>
                 <br><br>
-                <b>Achievements</b>
+                <b id = "achievements">Achievements</b>
                 <ul>
                   <li>Was the Memberships head for Gaming Genesis</li>
                   <li>Currently the Logistics Head for APC Microsoft Community</li>
@@ -81,12 +65,63 @@
                 <h3>Course</h3>
                 Currently studying as a Bachelor of Science in Computer Science specializing in Software Systems.
               </div>
-              <img class="main-content-image" src="https://www.apc.edu.ph/wp-content/uploads/2021/09/MicrosoftTeams-image-2-1024x670.jpg" alt="I Study here!">
+              <!-- Course image removed -->
             </div>
 
             <div class="content-container">
-              <img class="main-content-image" src="https://life360-website-cdn.life360.com/wp-content/uploads/sites/8/2024/03/AU-Homepage-Hero-image.png" alt="IT Experience Image">
+              <!-- IT Experience image removed -->
               <div class="content-text">
-                <h3>IT Experience</h3>
-                Had a 
-                <a href="https://docs.google.com/document/d/1Ib
+                <h3>Experience</h3>
+                Had a Mobile Development Project that I developed alone for a Group Research Project using Java that works similarly to an Air Tag but has ways of communication to send information for different scenarios such as natural disasters as well as man-made scenarios.
+              </div>
+            </div>
+
+            <div class="content-container">
+              <div class="content-text">
+                <h3>Hobbies & Interests</h3>
+                As a person who doesn't really have anything to do in life, I commonly find myself doing these activities apart from looking at landscapes or "views" like the city lights in the evening.
+                <br>
+                <ul>
+                  <li>Reading</li>
+                  <li>Sleeping</li>
+                  <li>Cooking</li>
+                  <li>Photography</li>
+                  <li>Travelling</li>
+                </ul>
+              </div>
+              <!-- Hobbies image removed -->
+            </div>
+
+            <div class="content-container">
+              <!-- Goals image removed -->
+              <div class="content-text">
+                <h3>Goals In Life / Dream</h3>
+                To be so financially stable that I can spend on a day the average spending power of a person on a year.
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+
+
+    <!-- Footer -->
+  <footer> <h6>Asia Pacific College WEBPROG SS231 
+    <br><br>
+    Developed by Paul Brian Sumilhig
+    <br>
+    </h6>
+  </footer>
+
+
+</template>
+
+<script>
+export default {
+  name: 'YourComponentName', // Replace with your component name
+};
+</script>
+
