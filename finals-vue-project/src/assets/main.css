@@ -59,11 +59,12 @@
   flex-direction: column;
   margin-top:20px;
   margin-bottom:20px;
+  align-items: center;
+  text-align: center;
 }
 
 
 #intro {
-  padding-left: 100px;
   max-width:500px;
   text-align: left;
   color:var(--text-gray);
@@ -73,15 +74,14 @@
 
 
 .intro-text{
-  margin-left:50px; /* Center the box horizontally */
-  align-items: center; /* Center the box vertically */
+ align-items: center; /* Center the box vertically */
 
 }
 
+/* for glowing thing */
 .intro-image{
   height: 250px;
   width: 165px;
-  margin-left: 130px;
   border-radius:5px;
   filter: contrast(1.1);
   cursor: pointer;
@@ -120,12 +120,10 @@
 /* Main Content */
 .main-content {
   min-width: 100%;
-  align-items: center;
-  text-align: center;
 }
 
 .main-content-holder {
-  margin: 100px auto;
+
   max-width: 800px;
 }
 
@@ -247,28 +245,65 @@ a,
   transition: 0.4s;
   padding: 3px;
 }
+/* text animation for education */
 
-span{
-  color:var(--pink)
+.text-animation {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 1000px;
+
 }
 
-.text-animation{
-  font-size:34px;
-  font-weight:600;
-  min-width:280px;
-  }
-  .text-animation span{
-    position:relative
-  }
-  .text-animation span::before{
-    content:"Education";
-    color:var(--pink);
-    animation: words 20s infinite;
-  }
+.text-animation span {
+  position: relative;
+}
 
-  .text-animation span::after{
-    content:"";
-    background-color: var(--black);
-    position:absolute;
-    width: calc(100% + 8px)
+.text-animation span::before {
+  content: "Education"; /* Initial content */
+  color: var(--pink);
+  animation: words 20s infinite;       
+}
+
+.text-animation span::after {
+  content: "";
+  background-color: var(--black);
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid var(--black);
+  right: -8px;
+  animation: cursor 0.3s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left:2px solid var(--pink)
   }
+}
+
+@keyframes words {
+  0%, 20% {
+    content: "Achievements";
+  }
+  21%, 40% {
+    content: "Experiences";
+  }
+  41%, 60% {
+    content: "Education";
+  }
+  61%, 80% {
+    content: "Achievement";
+  }
+  81%, 100% {
+    content: "Experiences";
+  }
+}
+
+@keyframes typing {
+   10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+    width: 0;
+  }
+  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+    width: calc(100% + 8px);
+  }
+}

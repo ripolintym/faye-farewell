@@ -47,35 +47,10 @@ import Profileimage from '../assets/images/profile.jpeg';
               <div class="content-container">
               <!-- Education image removed -->
               <div class="content-text">
-                <h3 class=text-animation><span></span></h3><p>
-                Studied two different science high schools, one for Junior High School and another one located at a different city for Senior High School. With Honors as a grade 12 student as well as a First Year College Student.
-              </p>
-                <br><br>
-                <b id = "achievements">Achievements</b>
-                <ul>
-                  <li>Was the Memberships head for Gaming Genesis</li>
-                  <li>Currently the Logistics Head for APC Microsoft Community</li>
-                  <li>Current President for Gaming Genesis</li>
-                </ul>
-              </div>
+                <h2 class=text-animation>Timeline of <span></span></h2><p>
+                </p>
+               </div>
             </div>
-
-            <div class="content-container">
-              <div class="content-text">
-                <h3>Course</h3>
-                Currently studying as a Bachelor of Science in Computer Science specializing in Software Systems.
-              </div>
-              <!-- Course image removed -->
-            </div>
-
-            <div class="content-container">
-              <!-- IT Experience image removed -->
-              <div class="content-text">
-                <h3>Experience</h3>
-                Had a Mobile Development Project that I developed alone for a Group Research Project using Java that works similarly to an Air Tag but has ways of communication to send information for different scenarios such as natural disasters as well as man-made scenarios.
-              </div>
-            </div>
-
             <div class="content-container">
               <div class="content-text">
                 <h3>Hobbies & Interests</h3>
