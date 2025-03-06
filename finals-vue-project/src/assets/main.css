@@ -91,7 +91,7 @@
   
 .intro-image:hover {
   border-radius: 5px;
-  transform: scaleX(1.5) scaley(1.5);
+  transform: scale(1.5);
   border-color: var(--main);
   box-shadow: 0 0px 10px var(--main);
 }
@@ -141,7 +141,7 @@ body > footer {
   text-align: justify;
   width: 30%;
   margin: 60px;
-  margintop:;
+  margin-top:10px;
 }
 
 .content-container {
@@ -354,8 +354,90 @@ a,
   top:10px;
 }
 
+.timeline-date{
+  font-size:20px;
+  font-weight: 800px;
+  color:white;
+  margin:6px 0 15px;
+}
+.timeline-content{
+  background-color: var(--black);
+  border:3px solid var(--main);
+  padding:30px 50px;
+  border-radius: 4rem;
+  box-shadow: 0 0 10px var(--main);
+  cursor: pointer;
+  transition:  0.3s ease-in-out;
+  margin-top: 20px;
+}
+.timeline-content:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 25px var(--main);
+}
+.timeline-content h3{
+  font-size: 20px;
+  margin:0 0 10px;
+  font-weight: 500;
+}
+.timeline-content p{
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+
+::webkit-scrollbar{
+  width:15px;
+}
+::webkit-scrollbar-thumb{
+  background-color:var(--main)
+}
+::webkit-scrollbar-track{
+  background-color:var(--main);
+  width: 50px;
+}
 /* Hobbies */
 
-.hobbies-image{
+.gallery {
+  padding: 5rem 5%;
+  background: var(--darker-bg);
+}
   
-} 
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+  
+.gallery-card{
+  padding: 0;
+  margin: 0;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+  
+.gallery-card:hover {
+  transform: TranslateY(-10px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 30px var(--accent-glow);
+}
+  
+.gallery-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+  color: var(--accent);
+}
+  

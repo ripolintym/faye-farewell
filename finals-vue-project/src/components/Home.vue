@@ -1,6 +1,11 @@
 <script setup>
 
 import Profileimage from '../assets/images/profile.jpeg';
+import image1 from '../assets/images/image1.jpeg';
+import image2 from '../assets/images/image2.jpeg';
+import image3 from '../assets/images/image1.jpeg';
+import image4 from '../assets/images/image2.jpeg';
+import image5 from '../assets/images/image1.jpeg';
 
 </script>
 
@@ -89,19 +94,62 @@ import Profileimage from '../assets/images/profile.jpeg';
 
                 <div class = "timeline-item">
                   <div class = "timeline-dot"></div>
-                    <div class = "timeline-date"> 2024</div>
+                    <div class = "timeline-date"> June 2024</div>
                     <div class = timeline-content>
                       <h3>Organization Life</h3>
-                      <P>Became the Memberships Head for Asia Pacific College Gaming Genesis</P>
+                      <P>Became the Logistics Head for Asia Pacific College Microsoft Community</P>
+                    </div>
+                </div>
+
+                <div class = "timeline-item">
+                  <div class = "timeline-dot"></div>
+                    <div class = "timeline-date"> August 2024</div>
+                    <div class = timeline-content>
+                      <h3>Organization Life</h3>
+                      <P>Became the OIC President for Asia Pacific College Gaming Genesis</P>
                     </div>
                   
                 </div>
+
+                <div class = "timeline-item">
+                  <div class = "timeline-dot"></div>
+                    <div class = "timeline-date"> November 2024</div>
+                    <div class = timeline-content>
+                      <h3>Honor Student Awardee</h3>
+                      <P>Asia Pacific College</P>
+                    </div>
+                    <div class = timeline-content>
+                      <h3>Quality Assessment Interviewee</h3>
+                      <P>ASEAN University Network</P>
+                    </div>
+                </div>
                </div>
           </div>
-            
-
-          </div>
+        </div>
         </section>
+
+
+        <section id="gallery" class="gallery">
+    <h2>Picture Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-card">
+        <img :src="image1" alt="Gallery Image 1">
+      </div>
+      <div class="gallery-card">
+        <img :src="image2" alt="Gallery Image 2">
+      </div>
+      <div class="gallery-card">
+        <img :src="image3" alt="Gallery Image 3">
+      </div>
+      <div class="gallery-card">
+        <img :src="image4" alt="Gallery Image 4">
+      </div>
+      <div class="gallery-card">
+        <img :src="image5" alt="Gallery Image 5">
+      </div>
+    </div>
+  </section>
+
       </main>
     </div>
 
