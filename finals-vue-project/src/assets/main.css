@@ -5,7 +5,7 @@
   --black: #181818;
   --text-green:rgba(0, 189, 126, 1);
   --text-pink:#F3847C;
-  --pink:#F3847C;
+  --main:rgba(0,189,126,1);
   --text-gray:rgba(255, 255, 255, 0.624);
  }
 
@@ -25,7 +25,7 @@
   height: auto;
   padding-bottom: 4px;
   background-image: linear-gradient(to bottom, #181818 0%, #181818 100%),
-                    linear-gradient(to bottom, #181818 0%, var(--pink) 100%);
+                    linear-gradient(to bottom, #181818 0%, var(--main) 100%);
   background-clip: content-box, padding-box;
   font-family: "Antic Slab", sans-serif;
 }
@@ -92,8 +92,8 @@
 .intro-image:hover {
   border-radius: 5px;
   transform: scaleX(1.5) scaley(1.5);
-  border-color: var(--pink);
-  box-shadow: 0 0px 10px var(--pink);
+  border-color: var(--main);
+  box-shadow: 0 0px 10px var(--main);
 }
 
   
@@ -107,8 +107,8 @@
 }
 
 .socials-tab {
-  border-right: 1px solid var(--pink);
-  border-left: 1px solid var(--pink);
+  border-right: 1px solid var(--main);
+  border-left: 1px solid var(--main);
   padding: 5px;
 }
 
@@ -123,7 +123,8 @@
 }
 
 .main-content-holder {
-
+  display:flex;
+  flex-direction: row;
   max-width: 800px;
 }
 
@@ -131,7 +132,7 @@ body > footer {
 
   min-width: 100%;
   max-width: 100%;
-  background: var(--pink);
+  background: var(--main);
   height: auto;
 
 }
@@ -140,6 +141,7 @@ body > footer {
   text-align: justify;
   width: 30%;
   margin: 60px;
+  margintop:;
 }
 
 .content-container {
@@ -178,13 +180,13 @@ body > h2, h4, h5, h6 {
 }
 
 h4,h1, h3 {
-  color: var(--pink);
+  color: var(--main);
   margin: 2px;
 }
 
 a:link, a:visited {
   text-decoration: none;
-  color: var(--pink);
+  color: var(--main);
 }
 
 a:hover {
@@ -227,7 +229,7 @@ li {
 a,
 .green {
   text-decoration: none;
-  color: var(--pink);
+  color: var(--main);
   transition: 0.4s;
 
 }
@@ -241,7 +243,7 @@ a,
 a,
 .green {
   text-decoration: none;
-  color: var(--pink);
+  color: var(--main);
   transition: 0.4s;
   padding: 3px;
 }
@@ -260,7 +262,7 @@ a,
 
 .text-animation span::before {
   content: "Education"; /* Initial content */
-  color: var(--pink);
+  color: var(--main);
   animation: words 20s infinite;       
 }
 
@@ -277,7 +279,7 @@ a,
 
 @keyframes cursor {
   to {
-    border-left:2px solid var(--pink)
+    border-left:2px solid var(--main)
   }
 }
 
@@ -307,3 +309,53 @@ a,
     width: calc(100% + 8px);
   }
 }
+/* Timeline */
+
+.timeline-items {
+  max-width: 1200px;
+  margin:auto;
+  display:flex;
+  flex-wrap:wrap;
+  position:relative;
+}
+
+.timeline-items::before{
+  content:"";
+  position:absolute;
+  width:5px;
+  height:100%;
+  background-color:var(--main);
+  left: calc(50% - 1px);
+}
+.timeline-item{
+  margin: bottom 40px;
+  width:100%;
+  position:relative;
+}
+.timeline-item:last-child{
+  margin-bottom:0;
+}
+.timeline-item:nth-child(odd){
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+.timeline-item:nth-child(even){
+  padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+  height:21px;
+  width:21px;
+  background-color: var(--main);
+  box-shadow:0 0 25px var(--main),
+        0 0 50px var(--main);
+  position:absolute;
+  left: calc(50% - 8px);
+  border-radius:50%;
+  top:10px;
+}
+
+/* Hobbies */
+
+.hobbies-image{
+  
+} 

@@ -40,46 +40,71 @@ import Profileimage from '../assets/images/profile.jpeg';
     </section>
 
     <!-- Main Content -->
-    <div class="container">
+
       <main>
         <section class="main-content">
-          <div class="main-content-holder">
-              <div class="content-container">
-              <!-- Education image removed -->
+          
               <div class="content-text">
                 <h2 class=text-animation>Timeline of <span></span></h2><p>
                 </p>
                </div>
-            </div>
-            <div class="content-container">
-              <div class="content-text">
-                <h3>Hobbies & Interests</h3>
-                As a person who doesn't really have anything to do in life, I commonly find myself doing these activities apart from looking at landscapes or "views" like the city lights in the evening.
-                <br>
-                <ul>
-                  <li>Reading</li>
-                  <li>Sleeping</li>
-                  <li>Cooking</li>
-                  <li>Photography</li>
-                  <li>Travelling</li>
-                </ul>
-              </div>
-              <!-- Hobbies image removed -->
-            </div>
+               <div class = "content-container">
+                <div class = "timeline">
+               <div class = "timeline-items">
+                <div class = "timeline-item">
+                  <div class = "timeline-dot"></div>
+                    <div class = "timeline-date">2017-2021</div>
+                    <div class = timeline-content>
+                      <h3>Junior High School</h3>
+                      <P>Studied at Senator Renato Co mpañero Cayetano Memorial Science and Technology High School. Was just an average student</P>
+                    </div>                 
+                </div>
 
-            <div class="content-container">
-              <!-- Goals image removed -->
-              <div class="content-text">
-                <h3>Goals In Life / Dream</h3>
-                To be so financially stable that I can spend on a day the average spending power of a person on a year.
-              </div>
-            </div>
+                <div class = "timeline-item">
+                  <div class = "timeline-dot"></div>
+                    <div class = "timeline-date">2021-2023</div>
+                    <div class = timeline-content>
+                      <h3>Senior High School</h3>
+                      <P>Studied at Pasig City Science High School. Had a bit of awards. Made a Mobile Application that sends alerts on multiple phones by one click</P>
+                    </div>
+                </div>
+
+                <div class = "timeline-item">
+                  <div class = "timeline-dot">                  </div>
+                    <div class = "timeline-date">August 2023</div>
+                    <div class = timeline-content>
+                      <h3>College</h3>
+                      <P>Started Studying at Asia Pacific College </P>
+                    </div>
+                </div>
+
+                <div class = "timeline-item">
+                  <div class = "timeline-dot"></div>
+                    <div class = "timeline-date">March 2024</div>
+                    <div class = timeline-content>
+                      <h3>Organization Life</h3>
+                      <P>Became the Memberships Head for Asia Pacific College Gaming Genesis</P>
+                    </div>
+                </div>
+
+                <div class = "timeline-item">
+                  <div class = "timeline-dot"></div>
+                    <div class = "timeline-date"> 2024</div>
+                    <div class = timeline-content>
+                      <h3>Organization Life</h3>
+                      <P>Became the Memberships Head for Asia Pacific College Gaming Genesis</P>
+                    </div>
+                  
+                </div>
+               </div>
+          </div>
+            
 
           </div>
         </section>
       </main>
     </div>
-  </div>
+
 
 
 
